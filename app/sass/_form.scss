@@ -1,0 +1,38 @@
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input{
+  width: 100%;
+  padding: 1.5rem 0 1rem;
+  @include fontSize(0.875);
+  font-family: Montserrat, sans-serif;
+  color: white;
+  border: none;
+  border-bottom: 2px solid $border-input;
+  background: transparent;
+  outline: none;
+  @include placeholder {
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+    @include fontSize(0.875);
+    font-family: Montserrat, sans-serif;
+    color: #f2f5fa;
+  }
+}
+
+.form__order {
+  min-width: 160px;
+  align-self: center;
+  margin: 65px 0;
+  color: $accent;
+  border-color: $accent;
+}
+
+.form__privacy {
+  max-width: 410px;
+  text-align: center;
+  align-self: center;
+}

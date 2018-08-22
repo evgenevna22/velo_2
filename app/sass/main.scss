@@ -1,0 +1,60 @@
+@import "libs";
+@import "vars";
+@import "mixins";
+@import "layout";
+@import "btns";
+@import "slider";
+@import "modal";
+@import "form";
+
+html {
+  font-family: $default-font;
+  box-sizing: border-box;
+  color: $text;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+*, *:before, *:after, a {
+  box-sizing: inherit;
+}
+
+ul, li, h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+	margin-bottom: 0;
+}
+
+li {
+	text-decoration: none;
+	list-style: none;
+}
+
+img {
+	width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $default-font; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+@import "media";
+
+

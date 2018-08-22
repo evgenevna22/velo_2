@@ -1,0 +1,66 @@
+
+.modal-overlay {
+  z-index: 9998;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .85);
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 542px;
+  max-width: 100%;
+}
+
+.opened {
+  display: block;
+}
+
+.modal__header {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: $border-input;
+  }
+  &::before {
+    transform: rotate(-45deg);
+  }
+  &::after {
+    transform: rotate(45deg);
+  }
+}
+
+.modal__title {
+  padding-right: 2rem;
+  @include fontSize(3, 3.5);
+  color: #ffffff;
+ }

@@ -1,0 +1,80 @@
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  color: #ffffff;
+  @include fontSize(0.875);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid $border;
+  border-radius: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+  &--secondary {
+    border-color: transparent;
+    color: $text;
+  }
+  &--circle {
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 50%;
+  }
+  &--prev {
+    position: relative;
+    font-size: 0;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 17px;
+      left: 15px;
+      width: 10px;
+      height: 2px;
+      background-color: $border;
+      transform: rotate(-45deg);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 23px;
+      left: 15px;
+      width: 10px;
+      height: 2px;
+      background-color: $border;
+      transform: rotate(45deg);
+    }
+  }
+  &--next {
+    position: relative;
+    font-size: 0;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 23px;
+      left: 16px;
+      width: 10px;
+      height: 2px;
+      background-color: $border;
+      transform: rotate(-45deg);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 17px;
+      left: 16px;
+      width: 10px;
+      height: 2px;
+      background-color: $border;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.btn--secondary {
+  &.btn--checked {
+    color: #11143b;
+    border-color: #d2d2d4;
+  }
+}
