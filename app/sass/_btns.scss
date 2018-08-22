@@ -17,8 +17,8 @@
     background-color: $bg-btn;
   }
   &--secondary {
+    padding: .5rem 1.5rem;
     border-color: transparent;
-    color: $text-gray;
   }
   &--circle {
     width: 2.75rem;
@@ -34,19 +34,19 @@
       position: absolute;
       top: 17px;
       left: 15px;
-      width: 10px;
+      width: 7px;
       height: 2px;
-      background-color: $border;
+      background-color: #a0a3b3;
       transform: rotate(-45deg);
     }
     &:after {
       content: '';
       position: absolute;
-      top: 23px;
+      top: 21px;
       left: 15px;
-      width: 10px;
+      width: 7px;
       height: 2px;
-      background-color: $border;
+      background-color: #a0a3b3;
       transform: rotate(45deg);
     }
   }
@@ -56,11 +56,11 @@
     &:before {
       content: '';
       position: absolute;
-      top: 23px;
+      top: 21px;
       left: 16px;
-      width: 10px;
+      width: 7px;
       height: 2px;
-      background-color: $border;
+      background-color: #a0a3b3;
       transform: rotate(-45deg);
     }
     &:after {
@@ -68,9 +68,9 @@
       position: absolute;
       top: 17px;
       left: 16px;
-      width: 10px;
+      width: 7px;
       height: 2px;
-      background-color: $border;
+      background-color: #a0a3b3;
       transform: rotate(45deg);
     }
   }
@@ -78,7 +78,6 @@
 
 .btn--secondary {
   &.btn--checked {
-    color: #11143b;
     border-color: #d2d2d4;
   }
 }
