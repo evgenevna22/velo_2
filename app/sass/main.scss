@@ -1,6 +1,7 @@
 @import "libs";
 @import "vars";
 @import "mixins";
+@import "block";
 @import "layout";
 @import "btns";
 @import "slider";
@@ -10,7 +11,7 @@
 html {
   font-family: $default-font;
   box-sizing: border-box;
-  color: $text;
+  color: $text-gray;
 }
 
 .modal-open {
