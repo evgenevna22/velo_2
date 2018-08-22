@@ -20,6 +20,19 @@ $(document).ready(function () {
     return expandMenu();
   });
 });
+
+$(document).ready(function () {
+  $('.slider__wrapper-1').slick(
+    {
+      slidesToShow: 3,
+      arrows: true,
+      infinite: false,
+      nextArrow: '.btn--next-1',
+      prevArrow: '.btn--prev-1',
+    }
+  );
+});
+
 /*
 //Фиксированое меню
 $(window).scroll(function () {
