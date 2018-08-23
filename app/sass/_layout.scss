@@ -188,7 +188,7 @@
 }
 
 .hero {
-  padding: 8.1rem 15rem 12.5rem;
+  padding: 8.1rem 15rem 11rem;
   text-align: center;
   > * {
     color: $custom-white;
@@ -299,7 +299,7 @@
 }
 
 body {
-  background-color: lightblue;
+  background: url("../img/bg-pattern.jpg") repeat #073056;
 }
 
 .main-section {
@@ -434,7 +434,29 @@ body {
   margin-left: -36px;
   margin-top: -36px;
   position: absolute;
-  background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+  background: url("../img/play.svg") no-repeat;
   cursor: pointer;
 }
 
+.main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.main-footer__nav-item {
+  width: 45%;
+  max-width: 45%;
+}
+
+.main-footer__contacts {
+  text-align: right;
+}

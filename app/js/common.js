@@ -34,6 +34,12 @@ $(document).ready(function () {
     resizeDuration: 200,
     albumLabel: '%1 из %2'
   });
+
+  $("#iziModal").iziModal({
+    iframe: true,
+    width: '98%',
+    iframeHeight: 'calc(100vh - 100px)'
+  });
 });
 
 document.addEventListener("DOMContentLoaded",
