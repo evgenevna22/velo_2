@@ -17,6 +17,13 @@
   .main-header__wrapper {
     position: relative;
     background: url("../../img/hero.png") no-repeat;
+    @media screen and (max-width: $max-width) {
+      background-size: cover;
+      background-position: 50% 0;
+    }
+    @media screen and (max-width: $mid-width){
+      background-position: 53% 0;
+    }
   }
   &--fixed {
     padding-top: 104px;
@@ -203,6 +210,10 @@
   > * {
     color: $custom-white;
   }
+  @media screen and (max-width: $mid-width) {
+    padding-right: 6.5rem;
+    padding-left: 6.5rem;
+  }
   .hero__text {
     @include fontSize(1.125);
     line-height: 2rem;
@@ -230,6 +241,23 @@
   .news__list {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: $mid-width) {
+      flex-direction: column;
+    }
+  }
+
+  .news__item {
+    width: 30%;
+    margin-right: 3rem;
+    @media screen and (max-width: $mid-width) {
+      width: 100%;
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #d2d2d4;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
   }
 
   .news__item-data {
@@ -328,6 +356,9 @@ body {
   background-color: #ffffff;
   &--about {
     padding: 5rem;
+    @media screen and (max-width: $max-width) {
+      padding: 3rem;
+    }
   }
   &--news {
     padding-top: 3rem;
