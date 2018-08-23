@@ -35,11 +35,17 @@ $(document).ready(function () {
     albumLabel: '%1 из %2'
   });
 
-  $("#iziModal").iziModal({
+  $("#iziModal-1").iziModal({
     iframe: true,
-    width: '98%',
-    iframeHeight: 'calc(100vh - 100px)'
+    width: '95%',
+    iframeHeight: 'calc(100vh - 100px)',
+    iframeURL: "http://izimodal.dolce.ninja"
   });
+});
+
+$(document).on('click', '.trigger-modal', function (event) {
+  event.preventDefault();
+  $('#iziModal-1').iziModal('open', event);
 });
 
 document.addEventListener("DOMContentLoaded",
