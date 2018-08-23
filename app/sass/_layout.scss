@@ -2,6 +2,16 @@
   position: static;
 }
 
+.main-header__main-logo {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 0 1.625rem;
+  img {
+    width: 216px;
+    height: 45px;
+  }
+}
+
 .main-header {
   position: relative;
   .main-header__wrapper {
@@ -151,7 +161,7 @@
     }
   }
   &--expand {
-    padding: 10rem 8rem;
+    padding: 9.8rem 8rem;
     max-height: 50rem;
     transition: max-height 0.5s;
     .main-nav__item {
@@ -188,13 +198,14 @@
 }
 
 .hero {
-  padding: 8.1rem 15rem 11rem;
+  padding: 6.3rem 15rem 11.4rem;
   text-align: center;
   > * {
     color: $custom-white;
   }
   .hero__text {
     @include fontSize(1.125);
+    line-height: 2rem;
   }
   .hero__btn {
     margin-top: 3.875rem;
@@ -202,8 +213,6 @@
 }
 
 .about {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   text-align: center;
   .section__title {
     margin-bottom: 1.375rem;
@@ -250,6 +259,14 @@
   margin-bottom: 1rem;
  }
 
+
+.event {
+  padding-top: 7rem;
+  .section__title {
+    padding-bottom: 3.5rem;
+  }
+}
+
 .event__item {
   display: flex;
   justify-content: space-between;
@@ -267,6 +284,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  &--media {
+    padding-top: .975rem;
+  }
 }
 
 .event__item-data {
@@ -306,12 +326,18 @@ body {
   padding-right: 2rem;
   padding-left: 2rem;
   background-color: #ffffff;
+  &--about {
+    padding: 5rem;
+  }
   &--news {
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: #f4f6f9;
   }
   &--materials {
+    padding-top: 3rem;
+    padding-bottom: 5.25rem;
+    background-color: #f4f6f9;
     .btn {
       &--secondary {
         text-transform: capitalize;
@@ -321,8 +347,17 @@ body {
   }
 }
 
+.sponsors {
+  padding-top: 4.25rem;
+  padding-bottom: 4.5rem;
+  .section__title {
+    margin-bottom: 1.25rem;
+  }
+}
+
 .sponsors__list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -346,6 +381,7 @@ body {
   }
   img {
     filter: grayscale(100%);
+    opacity: .8;
   }
   &:hover {
     img {
@@ -356,6 +392,10 @@ body {
 
 
 .conditions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.2rem 0;
   background-color: #081e33;
   text-align: center;
   > * {
@@ -365,21 +405,48 @@ body {
 }
 
 .conditions__title {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .conditions__text {
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
   @include fontSize(1.125);
   &:first-of-type {
     margin-bottom: 0;
+    line-height: 1.8rem;
   }
 }
 
 .conditions__price {
-  margin-bottom: 2rem;
+  margin-bottom: 1.15rem;
   @include fontSize(2.5);
   display: block;
+  line-height: 2.9rem;
+  .btn {
+    margin-top: 2.7rem;
+  }
+}
+
+.conditions__text-btn {
+  margin-bottom: 1.5rem;
+}
+
+.conditions__link {
+  display: flex;
+  max-width: 316px;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem 2.25rem;
+  background-color: #0b2642;
+  color: $bg-btn;
+  p {
+    font-weight: 600;
+  }
+  .conditions__link-icon {
+    width: 57px;
+    height: 37px;
+    margin-bottom: 1.125rem;
+  }
 }
 
 
@@ -440,8 +507,24 @@ body {
 
 .main-footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  padding: 2.312rem 0;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+.main-footer__logo {
+  img {
+    width: 216px;
+    height: 45px;
+    margin-bottom: .75rem;
+  }
+}
+.main-footer__logo-link {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-footer__nav {
@@ -455,8 +538,38 @@ body {
 .main-footer__nav-item {
   width: 45%;
   max-width: 45%;
+  margin-bottom: 1.5rem;
 }
 
 .main-footer__contacts {
   text-align: right;
+  p {
+    margin-bottom: 1.25rem;
+  }
+  .socials {
+    display: flex;
+    justify-content: flex-end;
+    .socials__item {
+      display: flex;
+      align-items: flex-end;
+      margin-right: 2rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      &--fc {
+        img {
+          width: 10px;
+          height: 21px;
+        }
+      }
+      &--vk {
+        img {
+          width: 24px;
+          height: 15px;
+        }
+      }
+    }
+  }
 }
+
+
