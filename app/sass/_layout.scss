@@ -24,6 +24,9 @@
     @media screen and (max-width: $mid-width){
       background-position: 53% 0;
     }
+    @media screen and (max-width: $phone-width) {
+      background-position: 65% 0;
+    }
   }
   &--fixed {
     padding-top: 104px;
@@ -210,9 +213,37 @@
   > * {
     color: $custom-white;
   }
+  @media screen and (max-width: $max-width) {
+    padding-right: 9rem;
+    padding-left: 9rem;
+  }
   @media screen and (max-width: $mid-width) {
     padding-right: 6.5rem;
     padding-left: 6.5rem;
+  }
+  @media screen and (max-width: $mid-width) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  @media screen and (max-width: $phone-width) {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  .site-title {
+    line-height: 4rem;
+    margin-bottom: 2rem;
+    @media screen and (max-width: $min-width) {
+      font-size: 3rem;
+    }
+    @media screen and (max-width: $phone-width) {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+  }
+  .site-subtitle {
+    @media screen and (max-width: $phone-width) {
+      font-size: 1.5rem;
+    }
   }
   .hero__text {
     @include fontSize(1.125);
@@ -341,16 +372,37 @@
   color: $text-gray
 }
 
+.section {
+  @media screen and (max-width: $phone-width){
+    overflow: hidden;
+  }
+}
+
 .section__row {
   display: flex;
   align-items: center;
   margin-bottom: 3rem;
+  @media screen and (max-width: $phone-width){
+    flex-direction: column;
+    margin-bottom: 1rem;
+    .btn {
+      margin-bottom: 1rem;
+    }
+  }
   .section__title {
     margin-bottom: 0;
     margin-right: 3rem;
+    @media screen and (max-width: $phone-width){
+      margin-left: 0;
+    }
+    margin-bottom: 1.5rem;
+    margin-right: 0;
   }
   .controls {
     margin-left: auto;
+    @media screen and (max-width: $phone-width){
+      margin-left: 0;
+    }
   }
 }
 
@@ -362,6 +414,10 @@ body {
   padding-right: 2rem;
   padding-left: 2rem;
   background-color: #ffffff;
+  @media screen and (max-width: $phone-width) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
   &--about {
     padding: 5rem;
     @media screen and (max-width: $max-width) {
@@ -377,6 +433,10 @@ body {
     padding-top: 3rem;
     padding-bottom: 5.25rem;
     background-color: #f4f6f9;
+    @media screen and (max-width: $phone-width) {
+      padding-top: 1rem;
+      padding-bottom: 3rem;
+    }
     .btn {
       &--secondary {
         text-transform: capitalize;
@@ -549,6 +609,11 @@ body {
   justify-content: space-between;
   padding: 2.312rem 0;
   color: #fff;
+  @media screen and (max-width: $tablet-width) {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
   a {
     color: #fff;
   }
@@ -559,6 +624,10 @@ body {
     width: 216px;
     height: 45px;
     margin-bottom: .75rem;
+  }
+  @media screen and (max-width: $tablet-width) {
+    align-self: flex-start;
+    order: 1;
   }
 }
 .main-footer__logo-link {
@@ -572,12 +641,24 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 30%;
+  @media screen and (max-width: $tablet-width) {
+    width: 100%;
+    text-align: center;
+    order: 0;
+  }
 }
 
 .main-footer__nav-item {
   width: 45%;
   max-width: 45%;
   margin-bottom: 1.5rem;
+  @media screen and (max-width: $tablet-width) {
+    width: 100%;
+    max-width: 100%;
+    a {
+      font-size: 1.75rem;
+    }
+  }
 }
 
 .main-footer__contacts {
@@ -608,6 +689,12 @@ body {
         }
       }
     }
+  }
+  @media screen and (max-width: $tablet-width) {
+    position: absolute;
+    bottom: 15px;
+    align-self: flex-end;
+    order: 2;
   }
 }
 
