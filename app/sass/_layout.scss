@@ -202,7 +202,8 @@
 }
 
 .about {
-  padding: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   text-align: center;
   .section__title {
     margin-bottom: 1.375rem;
@@ -214,8 +215,6 @@
 }
 
 .news {
-  padding: 3rem 0;
-  background-color: #f4f6f9;
   .section__title {
     margin-bottom: 2rem;
   }
@@ -304,8 +303,22 @@ body {
 }
 
 .main-section {
-  padding: 0 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
   background-color: #ffffff;
+  &--news {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f4f6f9;
+  }
+  &--materials {
+    .btn {
+      &--secondary {
+        text-transform: capitalize;
+        color: $text;
+      }
+    }
+  }
 }
 
 .sponsors__list {
