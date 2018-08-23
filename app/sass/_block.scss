@@ -3,4 +3,10 @@
   font-weight: 400;
   line-height: 2.25rem;
   color: $title;
+  @media screen and (max-width: $tablet-width) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: $phone-width) {
+    font-size: 1.75rem;
+  }
 }

@@ -25,10 +25,6 @@
     height: 2.75rem;
     padding: 0.5rem 0.5rem;
     border-radius: 50%;
-    @media screen and (max-width: $tablet-width){
-      width: 1.75rem;
-      height: 1.75rem;
-    }
   }
   &--prev {
     position: relative;
@@ -48,10 +44,6 @@
       height: 2px;
       background-color: #a0a3b3;
       transform: rotate(-45deg);
-      @media screen and (max-width: $tablet-width) {
-        top: 9px;
-        left: 8px;
-      }
     }
     &:after {
       content: '';
@@ -62,10 +54,6 @@
       height: 2px;
       background-color: #a0a3b3;
       transform: rotate(45deg);
-      @media screen and (max-width: $tablet-width) {
-        top: 13px;
-        left: 8px;
-      }
     }
   }
   &--next {
@@ -86,10 +74,6 @@
       height: 2px;
       background-color: #a0a3b3;
       transform: rotate(-45deg);
-      @media screen and (max-width: $tablet-width) {
-        top: 13px;
-        left: 9px;
-      }
     }
     &:after {
       content: '';
@@ -100,10 +84,6 @@
       height: 2px;
       background-color: #a0a3b3;
       transform: rotate(45deg);
-      @media screen and (max-width: $tablet-width) {
-        top: 9px;
-        left: 9px;
-      }
     }
   }
 }

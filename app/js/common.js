@@ -76,6 +76,14 @@ function labnolIframe() {
   this.parentNode.replaceChild(iframe, this);
 }
 
+//Якоря на ссылках меню
+$(document).on('click', 'a[href^="#"]', function (event) {
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 500);
+  return false;
+});
+
 
 /*
 //Фиксированое меню
