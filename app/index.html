@@ -36,6 +36,9 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
+        <a href="" class="main-header__main-logo">
+          <img src="../img/footer-logo.png" width="216" height="45" alt="Логотип">
+        </a>
         <div class="main-header__wrapper">
           <div class="fixed-wrapper">
             <div class="main-header__top">
@@ -92,7 +95,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <section class="about  main-section">
+        <section class="about  main-section main-section--about">
           <h3 class="section__title">
             О гонке
           </h3>
@@ -156,7 +159,7 @@
                   <div class="youtube-player" data-id="hWQ1VZDbUyY"></div>
                 </div>
               </div>
-              <div class="event__item-col">
+              <div class="event__item-col event__item-col--media">
                 <iframe style="width:100%; height:600px;" src="https://veloviewer.com/routes/14271380/embed2"
                         frameborder="0" scrolling="no"></iframe>
               </div>
@@ -174,7 +177,7 @@
                   <div class="youtube-player" data-id="hWQ1VZDbUyY"></div>
                 </div>
               </div>
-              <div class="event__item-col">
+              <div class="event__item-col event__item-col--media">
                 <iframe style="width:100%; height:600px;" src="https://veloviewer.com/routes/14271380/embed2"
                         frameborder="0" scrolling="no"></iframe>
               </div>
@@ -193,7 +196,7 @@
                   <div class="youtube-player" data-id="hWQ1VZDbUyY"></div>
                 </div>
               </div>
-              <div class="event__item-col">
+              <div class="event__item-col event__item-col--media">
                 <iframe style="width:100%; height:600px;" src="https://veloviewer.com/routes/14271380/embed2"
                         frameborder="0" scrolling="no"></iframe>
               </div>
@@ -211,7 +214,7 @@
                   <div class="youtube-player" data-id="hWQ1VZDbUyY"></div>
                 </div>
               </div>
-              <div class="event__item-col">
+              <div class="event__item-col event__item-col--media">
                 <iframe style="width:100%; height:600px;" src="https://veloviewer.com/routes/14271380/embed2"
                         frameborder="0" scrolling="no"></iframe>
               </div>
@@ -339,8 +342,12 @@
             Регистрация открыта до 31 августа 2018 года
           </p>
           <p class="conditions__text">
-            <a href="http://masters.crimea.ua/registraciya" target="_blank" class="btn btn--main hero__btn">Зарегестрироваться</a>
+            <a href="http://masters.crimea.ua/registraciya" target="_blank" class="btn btn--main hero__btn conditions__text-btn">Зарегистрироваться</a>
           </p>
+          <a href="http://masters.crimea.ua/registraciya" class="conditions__link">
+            <img src="../img/blue-cycle.svg" class="conditions__link-icon" width="57" height="37" alt="Иконка велосипеда">
+            <p>Список участников гонки</p>
+          </a>
         </section>
       </div>
     </div>
@@ -352,8 +359,9 @@
       <div class="col-12">
         <div class="main-footer">
           <div class="main-footer__logo">
-            <a href="">
-              <img src="" alt="">
+            <a href="main-footer__logo-link">
+              <img src="../img/footer-logo.png" width="216" height="45" alt="Логотип">
+              <p>Все права защищены.</p>
               <!--<a class="trigger" data-izimodal-open="#iziModal">Modal</a>-->
               <div id="iziModal" data-iziModal-iframeURL="https://veloviewer.com/routes/14271380/embed2" data-iziModal-title="Гонка-пролог в пос. Орлиное">
                 <!-- Modal content -->
@@ -381,11 +389,15 @@
             </li>
           </ul>
           <div class="main-footer__contacts">
-            <p>example@mail.com</p>
-            <p>+7 (978) 123-45-67</p>
+            <p class="main-footer__contacts-email">example@mail.com</p>
+            <p class="main-footer__contacts-phone">+7 (978) 123-45-67</p>
             <ul class="socials">
-              <li class="socials__item">facebook</li>
-              <li class="socials__item">vk</li>
+              <li class="socials__item socials__item--fc">
+                <img src="../img/fc.svg" width="10" height="21" alt="facebook">
+              </li>
+              <li class="socials__item socials__item--vk">
+                <img src="../img/vk.svg" width="24" height="15" alt="vk">
+              </li>
             </ul>
           </div>
         </div>
